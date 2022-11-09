@@ -24,9 +24,11 @@ public class OrderSerive {
         orderDAO.setOrderSequence();
         for(OrderVO order: orders){
             ItemVO itemVO =  itemDAO.findById(order.getItemNumber());
+//            원래 재고에서 주문한 만큼 뺸다
             itemVO.setItemStock(itemVO.getItemStock() - order.getItemCount());
             itemDAO.setItem(itemVO);
 //            주문 번호를 생성한다.
+//            생성자에 매개변수로 전달하면 첫번째 속성부터 순서대로 채워진다
             OrderDTO orderDTO = new OrderDTO(orderDAO.findId());
 //            전달받은 주문 정보를 담아준다.
             orderDTO.setItemCount(order.getItemCount());

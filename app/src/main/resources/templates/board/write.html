@@ -36,6 +36,15 @@
                                 <h4>작성자</h4>
                                 <input th:field="*{boardWriter}" placeholder="Writer" type="text" />
                             </div>
+                            <div class="field">
+                                <h4>첨부파일</h4>
+                                <input type="file" name="uploadFiles" multiple>
+                            </div>
+                            <div class="field">
+                                <div class="uploadResult">
+                                    <ul></ul>
+                                </div>
+                            </div>
                         </div>
                         <ul class="actions special">
                             <li><input type="submit" class="button" value="등록" /></li>
@@ -61,5 +70,32 @@
         e.preventDefault();
         location.href = "/board/list" + queryString;
     });
+
+    $("input[type='file']").on("change", function(){
+        let formData = new FormData();
+        let $inputFile = $("input[name= 'upload']");
+        let files = inputFile[0].files;
+        formData.append("upload", files);
+        $.ajax({
+            url:"/file/upload",
+            type : "post",
+            data : formData,
+            contentType: false,
+            processData: false,
+            success:showUploadTest
+        });
+    });
+
+
+    function showUploadReseult(files){
+
+        $(files).each(function(i, file){
+            text += `<li>`;
+            text += `<img src = "/file/display?fileName=`+file.fileUploadPath + `/s_`+file.fileUuid +file.fileName +`">`;
+            text += `</li>`;
+        });
+        $(".uploadResult ul").html(text);
+
+    }
 </script>
 </html>

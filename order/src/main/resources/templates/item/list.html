@@ -34,8 +34,10 @@
             <th>상품 가격</th>
             <th>상품 재고</th>
         </tr>
+        <!--타임리프는 컨트롤러에서 선언한걸 ${}형식으로 가져다 씀-->
         <th:block th:each="item:${items}">
             <tr>
+                <!--반복문이라서 *{}에 못넣고 item.itemNumber 형식으로 적는건가?-->
                 <td><input type="checkbox"></td>
                 <td th:text="${item.itemNumber}"></td>
                 <td th:text="${item.itemName}"></td>
@@ -44,7 +46,8 @@
             </tr>
         </th:block>
     </table>
-    <form th:action="@{/order/add}" name="payForm" method="post">
+                <!--@{} 타임리프에서 a 태그 링크거는 방법-->
+    <form th:action="@{/order/add}" name="payForm" method="post"><!--장바구니 테이블 생성-->
         <table id="cart"></table>
         <input type="button" id="pay" value="결제하기">
     </form>

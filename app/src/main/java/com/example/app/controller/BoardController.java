@@ -71,6 +71,9 @@ public class BoardController {
         boardService.delete(boardNumber);
         return new RedirectView("/board/list");
     }
+
+    @GetMapping("/test")
+    public void test(){}
 }
 
 
