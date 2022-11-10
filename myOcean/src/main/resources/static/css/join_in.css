@@ -1,0 +1,48 @@
+
+#join_in_wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    margin: 0px auto;
+    max-width: 808px;
+    width: 100%;
+    padding: 0px;
+    min-height: 653px;
+}
+
+#join_in_form_wrapper{
+    margin-top: 20px;
+    display: block;
+}
+
+#join_in_title_wrapper{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+input #id, input #password, input #password_again{
+    width: 100%;
+    padding: 14px 14px 12px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.42px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(238, 238, 238);
+    margin: 4px 0px 8px;
+}
+
+div#password_rule p{
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.36px;
+    color: rgb(153, 153, 153);
+}

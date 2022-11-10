@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 1페이지</title>
+    <link rel="stylesheet" href="css/join_in.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="join_in_wrapper">
+    <div id="join_in_form_wrapper">
+        <div id="join_in_title_wrapper">
+            <h3>회원가입</h3>
+        </div>
+        <form id = "register_wrapper">
+            <input type="text"  class="register" id="id" placeholder="아이디(이메일)">
+            <input type="password" class="register" id="password" placeholder="비밀번호">
+            <div id = "password_rule"><p>대/소문자, 숫자, 특수문자 중 2가지 이상의 조합으로 10자 이상</p></div>
+            <input type="password" class="register" id="password_again" placeholder="비밀번호 한 번 더">
+            <button type="submit" id="submit">다음</button>
+        </form>
+    </div>
+</div>
+
+</body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+    let $inputBorder = $('input.register');
+
+    $inputBorder.click(
+        function (){
+            this.border = '1px solid blue'
+        }
+
+    )
+
+</script>
+</html>

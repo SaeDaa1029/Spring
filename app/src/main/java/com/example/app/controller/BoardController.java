@@ -29,7 +29,8 @@ public class BoardController {
         if(criteria.getPage() == 0){
             criteria.createCriteria();
         }
-        pageDTO.createPageDTO(criteria, boardService.getTotal());
+        /*검색 결과 개수와 페이징에 필요한 criteria를 통해 page amount 전달, keyword와 type 또한 전달*/
+        pageDTO.createPageDTO(criteria, boardService.getTotal(criteria));
         model.addAttribute("boards", boardService.show(criteria));
         model.addAttribute("pagination", pageDTO);
     }
@@ -71,9 +72,6 @@ public class BoardController {
         boardService.delete(boardNumber);
         return new RedirectView("/board/list");
     }
-
-    @GetMapping("/test")
-    public void test(){}
 }
 
 

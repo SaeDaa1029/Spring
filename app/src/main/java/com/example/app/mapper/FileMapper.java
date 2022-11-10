@@ -13,4 +13,6 @@ public interface FileMapper {
     public List<FileVO> select(Long boardNumber);
 //    삭제
     public void delete(Long boardNumber);
+//    어제 저장된 첨부파일 전체 조회
+    public List<FileVO> selectOldFiles();
 }
