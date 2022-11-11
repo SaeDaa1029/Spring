@@ -4,9 +4,6 @@
 
     <sql id="search">
         <if test="keyword != null">
-/*prefix : 실행될 쿼리의 가장 앞부분에 붙여준다
-  suffix : 실행될 쿼리의 가장 뒷부분에 붙여준다
-  prefixOverrides : 해당 태그 내에서 쿼리가 가장 앞에 해당하는 문자를 지워준다*/
             <trim prefix="(" suffix=")" prefixOverrides="OR">
                 <foreach item="type" collection="types">
                     <trim prefix="OR">
