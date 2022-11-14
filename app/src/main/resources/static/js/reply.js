@@ -2,6 +2,8 @@
 * /board/reply.html
 * */
 
+
+// 서비스에 대한 기능들을 하나의 모듈로 묶어서 처리한다.
 let replyService = (function(){
     function add(reply, callback, error){
         $.ajax({

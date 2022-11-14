@@ -156,6 +156,7 @@
         }, getList);
     }
 
+    //DOM 분리
     function getList(replyDTO){
         let text = "";
         replyDTO.replies.forEach(reply => {
@@ -179,7 +180,11 @@
             text += "</li>";
         });
 
+        //페이지 이동이 없기 때문에 append로 하면 이전 목록이 없어지지 않는다.
+        //따라서 html로 계속 덮어씌워줘야 한다.
         $("ul.replies").html(text)
+
+        //페이징 처리를 위해 댓글 전체 개수를 전달해준다.
         showReplyPage(replyDTO.replyCount)
     }
 
@@ -255,12 +260,13 @@
 
     //댓글 페이징 처리
     function showReplyPage(replyCount){
-        let endNumber = Math.ceil(page / 10) * 10;
+        let endNumber = Math.ceil(globalThis.page / 10) * 10;
         let startNumber = endNumber - 9;
         let realEnd = Math.ceil(replyCount / 10);
         const $paging = $("div.paging");
 
         if(endNumber > realEnd){
+
             endNumber = realEnd == 0 ? '1' : realEnd;
         }
 
@@ -269,18 +275,38 @@
 
         let text = "";
 
-        if(prev){
-            text += `<a><code><</code></a>`
-        }
-        for (let i=startNumber; i<=endNumber; i++){
-            text += `<a><code>` + i + `</code></a>`
-        }
-        if(next){
-            text += `<a><code>></code></a>`
+        if(matchMedia("screen and (max-width: 918px)").matches){
+            if(globalThis.page > 1){
+                text += `<a class="changePage" href="` + (globalThis.page - 1) + `"><code><</code></a>`
+            }
+            text += `<code>` + globalThis.page + `</code>`
+            if(globalThis.page < realEnd){
+                text += `<a class="changePage" href="` + (globalThis.page + 1) + `"><code>></code></a>`
+            }
+        }else{ // 918px 이상일 때
+            if(prev){
+                text += `<a class="changePage" href="` + (startNumber - 1) + `"><code><</code></a>`
+            }
+            for (let i=startNumber; i<=endNumber; i++){
+                if(globalThis.page == i){
+                    text += `<code>` + i + `</code>`
+                    continue;
+                }
+                text += `<a class="changePage" href="` + i + `"><code>` + i + `</code></a>`
+            }
+            if(next){
+                text += `<a class="changePage" href="` + (endNumber + 1) + `"><code>></code></a>`
+            }
         }
 
         $paging.html(text);
     }
+
+    $("div.paging").on("click", "a.changePage", function(e){
+        e.preventDefault();
+        globalThis.page = $(this).attr("href");
+        show();
+    });
 
 
 
