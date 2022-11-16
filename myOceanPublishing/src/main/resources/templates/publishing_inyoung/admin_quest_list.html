@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배너관리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/admin_quest_list.css">
+</head>
+
+<body>
+    <div id="page_wrapper">
+        <div class="totalWrap">
+            <div class="left">
+                <div class="menu">
+                    <div id="menu-service-name">나의 바다</div>
+
+                    <ul id="side_menubar">
+                        <li><a href="managerMain.html" class="item">
+                                <div>대시보드</div>
+                            </a>
+                        </li>
+                        <li><a href="#" class="item">
+                                <div>회원 관리</div>
+                            </a>
+                            <ul class="middle_item">
+                                <li><a href="admin_user_list.html" class="middle-items">
+                                        <div>회원 목록</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="item">
+                            <div>콘텐츠 관리</div>
+                        </a>
+                            <ul class="middle_item">
+                                <li><a href="admin_free_board.html" class="middle-items">
+                                        <div>자유게시판 관리</div>
+                                    </a>
+                                </li>
+                                <li><a href="admin_counseling_board.html" class="middle-items">
+                                        <div>고민상담 게시판 관리</div>
+                                    </a>
+                                </li>
+                                <li><a href="#" class="middle-items">
+                                        <div>모임 게시판 관리</div>
+                                    </a>
+                                </li>
+                                <li><a href="#" class="middle-items">
+                                        <div>퀘스트 관리</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="item">
+                            <div>페이지 관리</div></a>
+                            <ul class="middle_item">
+                                <li><a href="#" class="middle-items">
+                                        <div>배너관리</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="admin_questions.html" class="item">
+                                <div>문의사항/신고</div>
+                            </a></li>
+                        <li><a href="#" class="item">
+                                <div>사이트 바로가기</div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div id="header">
+                    <div id="header-wrapper">
+                        <div id="clock"></div>
+                        <div id="admin-info">
+                            <div class="admin-info-wrapper" id="admin-photo">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                                    alt="user">
+                            </div>
+                            <div class="admin-info-wrapper" id="admin-name">
+                                <span>김인영<span>
+                                        <span>님</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="content-top-wrapper">
+                        <div id="menu-title">퀘스트 관리</div>
+                        <div id = "content-top-right">
+                        <div class="filter-checked"><button>퀘스트 등록</button></div>
+                        <div id="search_box">
+                            <button id="search_button">
+                                <img id="serch_icon"
+                                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E %3Cpath stroke='%23AAA' stroke-width='2' d='M11 17c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM15 15l4.95 4.95'/%3E %3C/svg%3E"
+                                    alt="" class="MagnifierImg__MagnfierImg-vdfqqy-0 kKRRUP">
+                            </button>
+                            <input id="search_input" type="text" placeholder="배너 검색">
+                        </div>
+                        </div>
+                    </div>
+                    <div id = "table-wrapper">
+                        <table id="info_table">
+                            <thead>
+                                <tr>
+                                    <th class="thead"></th>
+                                    <th class="thead">이름</th>
+                                    <th class="thead">카테고리</th>
+                                    <th class="thead">내용</th>
+                                    <th class="thead">포인트</th>
+                                    <th class="thead">뱃지 유무</th>
+                                    <th class="thead">수정</th>
+                                    <th class="thead">삭제</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td class="info_td">1</td>
+                                <td class="info_td">회원가입 퀘스트</td>
+                                <td class="info_td">활동</td>
+                                <td class="info_td">회원가입을 완료하는 퀘스트</td> 
+                                <td class="info_td">100포인트</td>
+                                <td class="info_td">○</td>
+                                <td class="info_td"><button class = "actions">수정</button></td>
+                                <td class="info_td"><button class = "actions">삭제</button></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div id = "page_changer_wrapper">
+                        <div id="previous_button_wrapper">
+                          <button class = "previous_buttons">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='%23FFF' fill-opacity='0' fill-rule='nonzero' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M16 16l4 4-4 4M21 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E" class="PaginationButtonGroup__Icon-x0iffd-2 jVxRns">
+                          </button>
+                          <button class = "previous_buttons">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='none' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M18 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E" class="PaginationButtonGroup__Icon-x0iffd-2 jVxRns">
+                          </button>
+                        </div>
+                          <button class="page">1</button>
+                          <button class="page">2</button>
+                          <button class="page">3</button>
+                          <button class="page">4</button>
+                          <button class="page">5</button>
+                          <button class="page">6</button>
+                          <button class="page">7</button>
+                          <button class="page">8</button>
+                          <button class="page">9</button>
+                        <div id="next_button_wrapper">
+                          <button class = "next_buttons">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='%23FFF' fill-opacity='0' fill-rule='nonzero' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M16 16l4 4-4 4M21 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E" class="PaginationButtonGroup__Icon-x0iffd-2 jVxRns">
+                          </button>
+                          <button class = "next_buttons">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath fill='none' d='M0 0h40v40H0z'/%3E %3Cpath stroke='%23DDD' stroke-width='1.5' d='M18 16l4 4-4 4'/%3E %3C/g%3E %3C/svg%3E" class="PaginationButtonGroup__Icon-x0iffd-2 jVxRns">
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    // html dom 이 다 로딩된 후 실행된다.
+    $(document).ready(function () {
+        $list = $("li").find("a.item")
+       $list.click(function () {
+            var submenu = $(this).children("ul");
+            if(submenu){
+                submenu.is(":visible")? submenu.slideUp():submenu.slideDown();
+            }else{
+
+            }
+        });
+    });
+
+
+    var Target = document.getElementById("clock");
+    function clock() {
+        var time = new Date();
+
+        var month = time.getMonth();
+        var date = time.getDate();
+        var day = time.getDay();
+        var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        var seconds = time.getSeconds();
+
+        Target.innerText =
+            `${month + 1}월 ${date}일 ${week[day]}요일 ` +
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+    }
+    clock();
+    setInterval(clock, 1000); // 1초마다 실행
+</script>
+
+</html>
