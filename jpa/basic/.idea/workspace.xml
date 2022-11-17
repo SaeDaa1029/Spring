@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="636d420f-0bc6-48af-aca1-2add58310129" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HYvnUPPDbR05vSCcyBZEgAf0G7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/gb_0900_kiy/spring/workspace/jpa/basic",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "f17aaabc20bfe045075927934fed52d2"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.SuperCarTest">
+    <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.basic.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.basic.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.basic.domain.entity.MemberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.basic.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.basic.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.basic.domain.entity.MemberTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperCarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.basic.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.basic.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.basic.domain.entity.SuperCarTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperCarTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.basic.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.basic.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.basic.domain.entity.SuperCarTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperCarTest.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.basic.domain.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.basic.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.basic.domain.entity.SuperCarTest" />
+      <option name="METHOD_NAME" value="updateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="basic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.basic.BasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SuperCarTest" />
+        <item itemvalue="JUnit.MemberTest.saveTest" />
+        <item itemvalue="JUnit.SuperCarTest.saveTest" />
+        <item itemvalue="JUnit.SuperCarTest.updateTest" />
+        <item itemvalue="JUnit.MemberTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="636d420f-0bc6-48af-aca1-2add58310129" name="Changes" comment="" />
+      <created>1668475000726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668475000726</updated>
+      <workItem from="1668475002165" duration="20455000" />
+      <workItem from="1668642008852" duration="46000" />
+      <workItem from="1668642327091" duration="622000" />
+      <workItem from="1668664390927" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

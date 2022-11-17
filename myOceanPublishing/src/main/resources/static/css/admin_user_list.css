@@ -303,7 +303,7 @@ input#search_input::placeholder {
     text-indent: initial;
     border-spacing: 2px;
     border-bottom: grey;
-    margin: 0px 20px auto auto;
+    margin: 0 20px auto auto;
     background-color: #fff;
 }
 
@@ -344,7 +344,7 @@ button.more {
 .admin {
     font-family: inherit;
     height: 60%;
-    padding: 0px 8px;
+    padding: 0 8px;
     color: #6837f8;
     font-weight: 400;
 }
@@ -352,7 +352,7 @@ button.more {
 .normal {
     font-family: inherit;
     height: 60%;
-    padding: 0px 8px;
+    padding: 0 8px;
     font-weight: 400;
 }
 
@@ -402,7 +402,7 @@ button.previous_buttons {
     width: 40px;
     height: 40px;
     line-height: normal;
-    padding: 0px;
+    padding: 0;
     background-color: white;
     text-align: center;
     cursor: not-allowed;
@@ -422,7 +422,7 @@ button.page {
     width: 40px;
     height: 40px;
     line-height: normal;
-    padding: 0px;
+    padding: 0;
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -449,7 +449,7 @@ button.next_buttons {
     width: 40px;
     height: 40px;
     line-height: normal;
-    padding: 0px;
+    padding: 0;
     background-color: white;
     text-align: center;
     cursor: not-allowed;
@@ -466,4 +466,5 @@ button.next_buttons {
 
 div.admin_modal{
 position: relative;
+
 }
