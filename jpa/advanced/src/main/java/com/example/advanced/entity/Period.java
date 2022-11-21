@@ -9,9 +9,9 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
-@MappedSuperclass // 모듈화
-@Getter
+@MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
+@Getter
 public abstract class Period {
     @CreatedDate
     private LocalDateTime createdDate;
